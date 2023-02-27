@@ -8,11 +8,12 @@ import { MainContainer, MainContainerProps } from "../../components";
 import { parseLocation } from "../../utils/formatter";
 
 /*
-  This component only handles the user interaction, the UI components are in the components dir.
+  This component only handles data, the UI components are in the components dir.
 */
 const Main = () => {
   const [ipAddress, setIpAddress] = useState<string>("");
   const [validIp, setValidIp] = useState<string>("");
+  // The location is retrieved via the IP API after 1 second automatically.
   const debounceValue = useRef(debounce(setValidIp, DEBOUNCE_DELAY)).current;
   const { location, isLoading } = useIPLocation(validIp);
   const {
