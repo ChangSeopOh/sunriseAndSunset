@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Sunrise and Sunset Time Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application that shows the sunrise and sunset times based on the user's IP address. It makes use of react-bootstrap for styling and lodash for debouncing input changes.
 
-## Available Scripts
+## How to Use
 
-In the project directory, you can run:
+To use the app, simply follow these steps:
 
-### `npm start`
+1. Enter your IP address in the input field. The app will automatically validate the IP address and show a warning message if it is invalid.
+2. The app will display the estimated location based on the IP address you entered.
+3. The sunrise and sunset times for your location will be shown in the "Sunrise and Sunset" section of the app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Note: The sunrise and sunset times are calculated based on the estimated location of your IP address, so they may not be completely accurate. Additionally, if the app is unable to determine your location based on the IP address you entered, it will show "N/A" for the sunrise and sunset times.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To install and run the app locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository: git clone https://github.com/changseopOh/sunriseAndSunset.git
+2. Install the dependencies: yarn
+3. Run the app: yarn start
 
-### `npm run build`
+## Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This app makes use of the following dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- react-bootstrap for styling
+- lodash for debouncing input changes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Atomic Design Pattern
 
-### `npm run eject`
+This project follows the Atomic Design Pattern to organize its design components. Atomic Design is a methodology for creating design systems by breaking them down into smaller, reusable parts. The five levels of Atomic Design are atoms, molecules, organisms, templates, and pages.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+In this project, I've used this pattern to create a scalable and maintainable design system. Each component is organized into one of these levels, based on its complexity and how it is used in the application. This approach promotes consistency and allows for easy extension of the design system as the project grows.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+By using the Atomic Design Pattern, I am able to maintain a high level of design quality while ensuring that the design system remains flexible and easy to use.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Todos
+- Replace the config.json file with environment variables by using the dotenv package.
+- In production, use cloud provider's environment variables to assign secret key values instead of hardcoding them.
+- Implement unit tests to ensure the reliability of the code.
+- Add additional error handling to improve the user experience.
+- Add the i18n to support the multiple languages.
+- Add the atomic design components such as Typography, label, textInput, and etc.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Time Spent
+This project took me about 7 hours to complete.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Uploaded Video
+http://g.recordit.co/157LuYE25u.gif

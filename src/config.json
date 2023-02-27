@@ -1,0 +1,5 @@
+{
+  "FREEGEOIP_API_KEY": "Ns8hANANCF4wBH5hSdexPDDFsPs8yl5DtYY4VOsn",
+  "FREEGEOIP_API_URL": "https://api.ipbase.com/v2/info",
+  "SUNRISE_SUNSET_URL": "https://api.sunrise-sunset.org/json"
+}
